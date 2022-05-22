@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.garbage{
+    height: 100vh;
+}
+
+
+/* Parallax styling */
+
+.parallax_wrapper{
+    /* width: 100%; */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 30px;
+}
+
+.parallax_group{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 40vh;
+}
+
+/* .parallax_group img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    inset: 0;
+    transform: translateZ(0px);
+} */
+
+.parallax_group .name{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+
+
+    position: absolute;
+    inset: 0;
+    transform: translateZ(-30px) scale(2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.name h1{
+    user-select: none;
+}
+
+
+#group-1{
+    z-index: -1;
+    background-image:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),  url(/images/galaxy-background.png);
+    background-size: cover;
+}
+
+#group-2{
+    position: absolute;
+    width: fit-content;
+    z-index: 100;
+    top: -260px;
+    right: 50%;
+}
+
+#particles-js{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    z-index: 10;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > * {
+    margin: 10px;
+    font-size: 1.5em;
+    color: white;
+    opacity: .5;
+    transition: .3s ease;
+}
+
+.buttons a:hover{
+    opacity: 1;
+}
