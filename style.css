@@ -190,7 +190,7 @@
     color: rgb(51, 0, 128);
     border: none;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0 10px;
     transition: .4s ease-in-out;
 }
 
