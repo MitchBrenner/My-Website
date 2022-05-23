@@ -18,7 +18,8 @@
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 30px;
-    transform-style: preserve-3d;
+
+    
 }
 
 .parallax_group{
@@ -26,6 +27,9 @@
     height: 100vh;
     position: relative;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* I added this */
     width: 100%;
     height: 40vh;
 }
