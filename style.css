@@ -123,6 +123,15 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 700px) {
+    .div{
+        width: 100%;
+    }
+    .about-me-div a{
+        display: block;
+    }
+    
+}
 
 .about-me-div .description p{
     margin: 30px;
@@ -162,6 +171,8 @@
 
 
 
+
+
 .title h1{
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
@@ -174,18 +185,22 @@
 
 .buttons-div{
     position: relative;
+    width: 100%;
     z-index: 2;
     margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons-div button{
-    min-width: 80px;
-    /* height: 40px; */
+    flex: 1 1 80px;
+
+    /* min-width: 80px; */
+
     font-family: 'Space Mono', monospace;
     padding: 10px;
     font-size: 1.1em;
-    /* font-style: italic; */
-
  
     color: rgb(51, 0, 128);
     border: none;
@@ -215,7 +230,7 @@
 .grid-item{
 
     
-    width: 31.5%;
+    width: 32.3%;
     min-width: 200px;
     height: 150px;
     opacity: 1;
@@ -249,4 +264,23 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1333px){
+    .grid-item{
+        width: 48%;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .buttons-div button{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .grid-item{
+        width: 100%;
+        height: 90px;
+    }
+}
 
