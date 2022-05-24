@@ -59,6 +59,19 @@
     margin: 0 10px;
 }
 
+
+@media screen and (max-width: 650px){
+
+    .parallax_group .name {
+        transform: none;
+        position: absolute;
+        top: 400px;
+        z-index: 10000;
+    }
+
+}
+
+
 .name .my-name{
     display: flex;
     justify-content: center;
@@ -212,6 +225,7 @@
 
 .grid-wrapper{
     width: 100%;
+    min-height: 50vh;
     /* border: 1px solid blue; *
     
 }
