@@ -139,7 +139,9 @@
     .about-me-div a{
         display: block;
     }
-    
+    .description{
+        width: 120%;
+    }
 }
 
 .about-me-div .description p{
