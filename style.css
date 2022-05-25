@@ -240,24 +240,57 @@
 }
 
 .grid-item{
-
-    
     width: 32.3%;
     min-width: 200px;
-    height: 150px;
+    height: 250px;
     opacity: 1;
     padding: 20px;
     margin: 5px;
     transition: .2s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(64, 0, 128, 0.304);
+    background: rgba(64, 0, 128, 0.204);
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
     color: #fff;
     font-family: 'Space Mono', monospace;
+    font-size: 1;
     z-index: 1;
+}
+
+.grid-item h1{
+    color: rgb(51, 0, 128);
+    font-size: 1.6rem;
+}
+
+.grid-item h2{
+    font-size: 1em;
+}
+
+.grid-item a, i{
+    font-size: 1.5em;
+    color: white;
+    transition: opacity, color .5s ease;
+    opacity: .85;
+}
+
+.grid-item i:hover{
+    opacity: 1;
+    color: rgb(51, 0, 128);
+}
+
+.grid-item p{
+    font-size: .9rem;
+}
+
+.grid-item .bottom-grid{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .grid-item::before{
@@ -267,7 +300,7 @@
     width: 100%;
     height: 100%;
     background: url("images/galaxy-background.png");
-    opacity: .4;
+    opacity: .2;
     z-index: -1;
 }
 
@@ -292,7 +325,10 @@
 @media screen and (max-width: 851px) {
     .grid-item{
         width: 100%;
-        height: 90px;
+        height: 200px;
+    }
+    .grid-item h1{
+        font-size: 1.5rem;
     }
 }
 
