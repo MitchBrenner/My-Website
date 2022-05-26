@@ -56,7 +56,7 @@
 
 .name h1{
     user-select: none;
-    margin: 0 10px;
+    font-weight: 400;
 }
 
 
@@ -142,6 +142,11 @@
     .description{
         width: 120%;
     }
+}
+
+
+.about-me-div{
+    z-index: 1000;
 }
 
 .about-me-div .description p{
