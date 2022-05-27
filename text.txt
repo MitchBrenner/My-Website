@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mitchell Brenner</title>
+</head>
+<body>
+
+    <div class="parallax_wrapper">
+
+
+        <div id="particles-js">
+
+        </div>
+        <div class="parallax_group" id="group-1">
+            <!-- <img src="/images/galaxy-background.png"> -->
+        </div>
+        <div class="parallax_group" id="group-2">
+            <div class="name">
+                <div class="my-name">
+                    <h1 class="first">Mitchell</h1>
+                    <h1 class="last">Brenner</h1>
+                </div>
+                <div class="buttons" id="buttons">
+                    <a href="https://github.com/MitchBrenner" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mitchell-brenner-124240230/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-me-wrapper wrapper">
+
+            <div class="about-me-div div">
+                <div class="title">
+                    <h1>// About Me</h1>
+                </div>
+                <div class="description">
+                    <div class="links">
+                        <a href="mailto: mkbrenner3@wisc.edu" target="_blank">
+                            <i class="fa-solid fa-envelope"></i> mkbrenner3@wisc.edu
+                        </a>
+                        <a href="/other files/Mitchell Brenner Resume.pdf" download rel="Mitchell Brenner Resume" target="_blank">
+                            <i class="fa-solid fa-file-arrow-down"></i>  Download Resume
+                        </a>
+                    </div>
+                    <p>
+                        I am a student at the University of Wisconsin-Madison majoring
+                        in computer science and minoring in mathematics. I have experience developing
+                        applications with Java, HTML, CSS, JavaScript, and Python.
+                    </p>
+  
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="projects-wrapper wrapper">
+
+            <div class="projects-div div" id="project-div">
+
+                <div class="title">
+                    <h1>// Projects</h1>
+                </div>
+                <div class="buttons-div">
+ 
+                    <button id="all">All</button>
+                    <button id="java">Java</button>
+                    <button id="javascript">JavaScript</button>
+                    <button id="python">Python</button>
+                    <button id="data">Data Structures</button>
+                </div>
+
+                <div class="grid-wrapper">
+                    <div class="grid" id="grid">
+                        <div class="grid-item java data">
+                            <h1>DNA Transcription</h1>
+                            <h2>An application that can convert a string of DNA to mRNA to an amino acid implemented as a <span class="data">linked queue</span> data structure</h2>
+                            <div class="bottom-grid">
+                                <h2>Java</h2>
+                                <a href="https://github.com/MitchBrenner/Bioinformatics-DNA-Transcription" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item python">
+                            <h1>GoPro Automation</h1>
+                            <h2>A program that connects to your GoPro and can take pictures, videos, save them on your computer, and delete them from the GoPro's memory</h2>
+                            <div class="bottom-grid">
+                                <h2>Python</h2>
+                                <a href="https://github.com/MitchBrenner/GoProAutomation" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item java data">
+                            <h1>Wordle Bot</h1>
+                            <h2> An application that assists a user in solving the wordle by storing all possible words in an 
+                                <span class="data">ArrayList</span> and removes words from list based on user commands
+                                </h2>
+                            <div class="bottom-grid">
+                                <h2>Java</h2>
+                                <a href="https://github.com/MitchBrenner/Wordle-Bot" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item java data">
+                            <h1>Job Management</h1>
+                            <h2>An Application to assist in managing a large number of applications for a job listing using an 
+                                <span class="data">array-based min-heap</span> to implement a <span class="data">priority queue</span>
+                                </h2>
+                            <div class="bottom-grid">
+                                <h2>Java</h2>
+                                <a href="https://github.com/MitchBrenner/Job-Management" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item java practice">
+                            <h1>Exam Scheduler</h1>
+                            <h2>An application using a recursive algorithm to create all possible exam sections pairing rooms with classes</h2>
+                            <div class="bottom-grid">
+                                <h2>Java</h2>
+                                <a href="https://github.com/MitchBrenner/Exam-Scheduler-Recursion" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item javascript">
+                            <h1>Blackjack</h1>
+                            <h2>A fully functional Blackjack application with betting using local storage</h2>
+                            <div class="bottom-grid">
+                                <h2>JavaScript</h2>
+                                <a href="https://github.com/MitchBrenner/BlackJack" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item java data">
+                            <h1>Online Art Gallery</h1>
+                            <h2>An application that implements an online art gallery using a Binary Search Tree allowing users to search and purchase artwork<span class="data">linked queue</span> data structure</h2>
+                            <div class="bottom-grid">
+                                <h2>Java</h2>
+                                <a href="https://github.com/MitchBrenner/Online-Art-Gallery" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item python"> 
+                            <h1>Excel Automation</h1>
+                            <h2>A program that automates the process of modifying large excel spreed sheets</h2>
+                            <div class="bottom-grid">
+                                <h2>Python</h2>
+                                <a href="https://github.com/MitchBrenner/Excel-Automation" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item java data">
+                            <h1>Iterable Song Player</h1>
+                            <h2>An application that allows a user to play through a collection of songs both forwards and backwards using a <span class="data">Doubly Linked List</span> implementation</h2>
+                            <div class="bottom-grid">
+                                <h2>Java</h2>
+                                <a href="https://github.com/MitchBrenner/Doubly-Linked-List-Song-Player" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="grid-item javascript">
+                            <h1>Chrome Extension</h1>
+                            <h2>A fully functional Chrome extension that allows a user to save and delete website URLs for later use</h2>
+                            <div class="bottom-grid">
+                                <h2>JavaScript</h2>
+                                <a href="https://github.com/MitchBrenner/Chrome-Extension" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="isotope-js/isotope.pkgd.min.js"></script>
+    <script src="isotope-js/iso.js"></script>
+     <script src="particles-js/particles.js"></script>
+     <script src="particles-js/app.js"></script>
+     <script src="https://kit.fontawesome.com/f3cafc6095.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+const allBtn = document.getElementById("all")
+const javaBtn = document.getElementById("java")
+const jsBtn = document.getElementById("javascript")
+const pythonBtn = document.getElementById("python")
+const dataBtn = document.getElementById("data")
+const data = document.querySelectorAll(".data")
+
+var grid = $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+  });
+
+
+  allBtn.addEventListener('click', () => {
+    grid.isotope({
+        filter: '*'
+    })
+    removeDataSytling()
+
+  })
+
+  javaBtn.addEventListener('click', () => {
+    grid.isotope({
+        filter: '.java'
+    })
+    removeDataSytling()
+
+  })
+
+  jsBtn.addEventListener('click', () => {
+    grid.isotope({
+        filter: '.javascript'
+    })
+    removeDataSytling()
+
+  })
+
+  pythonBtn.addEventListener('click', () => {
+    grid.isotope({
+        filter: '.python'
+    })
+    removeDataSytling()
+
+  })
+
+  dataBtn.addEventListener('click', () => {
+    grid.isotope({
+        filter: '.data'
+    })
+
+    addDataStyling()
+  })
+
+  
+  function addDataStyling(){
+    data.forEach(element => {
+      element.classList.add("data-styling")
+    });
+  }
+  function removeDataSytling(){
+    data.forEach(element => {
+      element.classList.remove("data-styling")
+    });
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+
+
+/* Parallax styling */
+
+.parallax_wrapper{
+    /* width: 100%; */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 30px;
+
+    
+}
+
+.parallax_group{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* I added this */
+    width: 100%;
+    height: 40vh;
+}
+
+.parallax_group .name{
+    color: white;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+
+
+    position: absolute;
+    inset: 0;
+    transform: translateZ(-25px) scale(1.9);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.name h1{
+    user-select: none;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 650px){
+
+    .parallax_group .name {
+        transform: none;
+        position: absolute;
+        top: 400px;
+        z-index: 10000;
+    }
+
+}
+
+
+.name .my-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#group-1{
+    z-index: -1;
+    background-image:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),  url(images/galaxy-background.png);
+    background-size: cover; 
+}
+
+#group-2{
+    position: absolute;
+    width: fit-content;
+    z-index: 100;
+    top: -230px;
+    right: 50%;
+}
+
+#particles-js{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    z-index: 10;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > * {
+    margin: 10px;
+    font-size: 1.5em;
+    color: white;
+    opacity: .5;
+    transition: .3s ease;
+}
+
+.buttons a:hover{
+    opacity: 1;
+}
+
+
+
+/* About me styling */
+
+.div{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .div{
+        width: 100%;
+    }
+    .about-me-div a{
+        display: block;
+    }
+    .description{
+        width: 120%;
+    }
+}
+
+
+.about-me-div{
+    z-index: 1000;
+}
+
+.about-me-div .description p{
+    margin: 30px;
+    font-size: 1.2em;
+    display: block;
+}
+
+.about-me-div .title{
+    margin-top: 40px;
+}
+.links{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-me-div .links a{
+    text-decoration: none;
+    color: rgba(51, 0, 128, 0.65);
+    text-align: center;
+    transition: color .3s ease-in;
+    margin: 10px;
+}
+
+/* .about-me-div .links i{
+    color: rgba(51, 0, 128, 0.65);
+} */
+
+.about-me-div .links a:hover{
+    color: rgb(51, 0, 128);
+}
+
+
+/* Projects styling */
+
+.wrapper{
+    padding: 25px 50px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+
+.title h1{
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    color: rgb(51, 0, 128);
+}
+
+
+
+/* buttons styling */
+
+.buttons-div{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-div button{
+    flex: 1 1 80px;
+
+    /* min-width: 80px; */
+
+    font-family: 'Space Mono', monospace;
+    padding: 10px;
+    font-size: 1.1em;
+ 
+    color: rgb(51, 0, 128);
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: .4s ease-in-out;
+}
+
+.buttons-div button:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+.grid-wrapper{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.grid-item{
+    position: relative;
+    width: 32.3%;
+    min-width: 200px;
+    height: 250px;
+    opacity: 1;
+    padding: 20px;
+    margin: 5px;
+    transition: transform .2s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(64, 0, 128, 0.204);
+    box-shadow: 0 0 7px rgba(51, 0, 128, 0.65);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    font-size: 1;
+    z-index: 1;
+    transform: translateX(8px);
+    transform-origin: center;
+}
+
+.grid-item h1{
+    color: rgb(51, 0, 128);
+    font-size: 1.6rem;
+}
+
+.grid-item h2{
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.grid-item a, .grid-item i{
+    font-size: 1.5em;
+    color: white;
+    transition: opacity, color .5s ease;
+    opacity: .85;
+}
+
+.bottom-grid h2{
+    font-weight: 800;
+}
+
+.grid-item i:hover{
+    opacity: 1;
+    color: rgb(51, 0, 128);
+}
+
+.grid-item p{
+    font-size: .9rem;
+}
+
+.grid-item .bottom-grid{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-item::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/galaxy-background.png");
+    opacity: .2;
+    z-index: -1;
+}
+
+.grid-item:hover{
+    transform: scale(1.1,1.1) translateX(8px);;
+
+    cursor: pointer;
+}
+
+.grid-item .data-styling{
+    color:rgb(51, 0, 128);
+    transition: 3s ease;
+}
+
+@media screen and (max-width: 1533px){
+    .grid-item{
+        width: 47%;
+    }
+    .grid-item > *{
+        transform: scale(.9);
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+
+    .buttons-div button{
+        margin: 5px;
+    }
+    .grid-wrapper{
+        width: 125%;
+    }
+
+    .grid-item{
+        width: 100%;
+        padding: 5px;
+        transform: translateX(-5px);
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .grid-item{
+       
+        width: 100%;
+        height: 200px;
+    }
+    .grid-item > *{
+        transform: scale(.85);
+
+    }
+    .grid-item h1{
+        font-size: 1.5rem;
+        margin: 0 0 -10px 0;
+    }
+}
+
