@@ -163,7 +163,7 @@
     text-align: center;
 }
 
-.about-me-div a{
+.about-me-div .links a{
     text-decoration: none;
     color: rgba(51, 0, 128, 0.65);
     text-align: center;
@@ -171,7 +171,11 @@
     margin: 10px;
 }
 
-.about-me-div a:hover{
+/* .about-me-div .links i{
+    color: rgba(51, 0, 128, 0.65);
+} */
+
+.about-me-div .links a:hover{
     color: rgb(51, 0, 128);
 }
 
@@ -184,9 +188,6 @@
     background-color: #fff;
     z-index: 10000;
 }
-
-
-
 
 
 .title h1{
@@ -205,6 +206,7 @@
     z-index: 2;
     margin: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -233,28 +235,21 @@
 .grid-wrapper{
     width: 100%;
     min-height: 50vh;
-    /* border: 1px solid blue; *
-    
-}
-
-#grid{
-
-    /* border: 1px solid red; */
-    padding: 5px;
-
 }
 
 .grid-item{
+    position: relative;
     width: 32.3%;
     min-width: 200px;
     height: 250px;
     opacity: 1;
     padding: 20px;
     margin: 5px;
-    transition: .2s ease-in-out;
+    transition: transform .2s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
     background: rgba(64, 0, 128, 0.204);
+    box-shadow: 0 0 7px rgba(51, 0, 128, 0.65);
 
     display: flex;
     justify-content: space-around;
@@ -264,6 +259,8 @@
     font-family: 'Space Mono', monospace;
     font-size: 1;
     z-index: 1;
+    transform: translateX(8px);
+    transform-origin: center;
 }
 
 .grid-item h1{
@@ -276,7 +273,7 @@
     font-weight: 100;
 }
 
-.grid-item a, i{
+.grid-item a, .grid-item i{
     font-size: 1.5em;
     color: white;
     transition: opacity, color .5s ease;
@@ -315,30 +312,55 @@
 }
 
 .grid-item:hover{
-    transform: scale(1.05);
+    transform: scale(1.1,1.1) translateX(8px);;
+
     cursor: pointer;
+}
+
+.grid-item .data-styling{
+    color:rgb(51, 0, 128);
+    transition: 3s ease;
 }
 
 @media screen and (max-width: 1533px){
     .grid-item{
         width: 47%;
     }
+    .grid-item > *{
+        transform: scale(.9);
+    }
     
 }
 
 @media screen and (max-width: 650px){
+
     .buttons-div button{
         margin: 5px;
+    }
+    .grid-wrapper{
+        width: 125%;
+    }
+
+    .grid-item{
+        width: 100%;
+        padding: 5px;
+        transform: translateX(-5px);
     }
 }
 
 @media screen and (max-width: 851px) {
     .grid-item{
+       
         width: 100%;
         height: 200px;
     }
+    .grid-item > *{
+        transform: scale(.85);
+
+    }
     .grid-item h1{
         font-size: 1.5rem;
+        margin: 0 0 -10px 0;
     }
 }
 
