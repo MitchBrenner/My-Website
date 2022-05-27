@@ -238,17 +238,18 @@
 .grid-wrapper{
     width: 100%;
     min-height: 50vh;
+    transform: translateX(5px);
 }
 
 .grid-item{
-    position: relative;
+    /* position: relative; */
     width: 32.5%;
     min-width: 200px;
     height: 250px;
     opacity: 1;
     padding: 20px;
     margin: 5px;
-    transition: transform .2s ease-in-out;
+    /* transition: .2s ease-in-out; */
     border-radius: 10px;
     overflow: hidden;
     background: rgba(64, 0, 128, 0.204);
@@ -262,9 +263,26 @@
     font-family: 'Space Mono', monospace;
     font-size: 1;
     z-index: 1;
-    transform: translateX(8px);
+
     transform-origin: center;
 }
+
+.grid-item::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/galaxy-background.png");
+    opacity: .2;
+    z-index: -1;
+}
+
+.grid-item:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
 
 .grid-item h1{
     color: rgb(51, 0, 128);
@@ -303,22 +321,6 @@
     align-items: center;
 }
 
-.grid-item::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background: url("images/galaxy-background.png");
-    opacity: .2;
-    z-index: -1;
-}
-
-.grid-item:hover{
-    transform: scale(1.1,1.1) translateX(8px);;
-
-    cursor: pointer;
-}
 
 .grid-item .data-styling{
     color:rgb(51, 0, 128);
@@ -332,7 +334,24 @@
     .grid-item > *{
         transform: scale(.9);
     }
+    .grid-wrapper{
+        transform: translateX(10px);
+    }
     
+}
+
+@media screen and (max-width: 851px) {
+    .grid-item{
+        width: 95%;
+        height: 200px;
+    }
+    .grid-wrapper{
+        transform: translateX(7px);
+    }
+    .grid-item h1{
+        font-size: 1.5rem;
+        margin: 0 0 -10px 0;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -342,31 +361,17 @@
     }
     .grid-wrapper{
         width: 125%;
+        transform: translateX(5px);
     }
 
     .grid-item{
         width: 95%;
         padding: 20px;
-        transform: scale(.85) translateX(-5px);
+        /* margin: -5px; */
     }
 
-    .grid-item:hover{
-        transform: scale(1) translateX(-5px);
-    }
-}
-
-@media screen and (max-width: 851px) {
-    .grid-item{
-        width: 95%;
-        height: 200px;
-    }
     .grid-item > *{
-        transform: translateX(-5px);
-
-    }
-    .grid-item h1{
-        font-size: 1.5rem;
-        margin: 0 0 -10px 0;
+        transform: scale(.85);
     }
 }
 
