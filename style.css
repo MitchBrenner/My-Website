@@ -243,13 +243,13 @@
 
 .grid-item{
     /* position: relative; */
-    width: 32.5%;
+    width: 31.9%;
     min-width: 200px;
     height: 250px;
     opacity: 1;
     padding: 20px;
     margin: 5px;
-    /* transition: .2s ease-in-out; */
+    transition: transform-scale .2s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
     background: rgba(64, 0, 128, 0.204);
@@ -280,7 +280,7 @@
 
 .grid-item:hover{
     transform: scale(1.1,1.1);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 
