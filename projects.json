@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Badger Chat Website",
+        "description": "A Full-Stack React Web App with real-time chat, API integration, and responsive design. Implemented user authentication, dynamic navigation, and post management for enhanced interactivity.",
+        "languages": ["JavaScript"],
+        "link": "https://github.com/CS571-F23/hw6-MitchBrenner"
+    },
+
+
+
+    {
+        "title": "DNA Transcription",
+        "description": "An application that can convert a string of DNA to mRNA to an amino acid implemented as a linked queue data structure",
+        "languages": ["Java"],
+        "link": "https://github.com/MitchBrenner/Bioinformatics-DNA-Transcription"
+    },
+
+    {
+        "title": "Space Invader",
+        "description": "A fully functional Space Invader application using pygame",
+        "languages": ["Python"],
+        "link": "https://github.com/MitchBrenner/Space-Invader"
+    }
+  ]

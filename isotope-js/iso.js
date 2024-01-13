@@ -9,57 +9,52 @@ var grid = $('.grid').isotope({
     // options
     itemSelector: '.grid-item',
     layoutMode: 'fitRows'
-  });
+});
 
-
-  allBtn.addEventListener('click', () => {
+allBtn.addEventListener('click', () => {
     grid.isotope({
         filter: '*'
-    })
-    removeDataSytling()
+    });
+    removeDataStyling();
+});
 
-  })
-
-  javaBtn.addEventListener('click', () => {
+javaBtn.addEventListener('click', () => {
     grid.isotope({
         filter: '.java'
-    })
-    removeDataSytling()
+    });
+    removeDataStyling();
+});
 
-  })
-
-  jsBtn.addEventListener('click', () => {
+jsBtn.addEventListener('click', () => {
     grid.isotope({
         filter: '.javascript'
-    })
-    removeDataSytling()
+    });
+    removeDataStyling();
+});
 
-  })
-
-  pythonBtn.addEventListener('click', () => {
+pythonBtn.addEventListener('click', () => {
     grid.isotope({
         filter: '.python'
-    })
-    removeDataSytling()
+    });
+    removeDataStyling();
+});
 
-  })
-
-  dataBtn.addEventListener('click', () => {
+dataBtn.addEventListener('click', () => {
     grid.isotope({
         filter: '.data'
-    })
-
-    addDataStyling()
-  })
-
-  
-  function addDataStyling(){
-    data.forEach(element => {
-      element.classList.add("data-styling")
     });
-  }
-  function removeDataSytling(){
+    addDataStyling();
+});
+
+function addDataStyling() {
     data.forEach(element => {
-      element.classList.remove("data-styling")
+        element.classList.add("data-styling");
     });
-  }
+}
+
+function removeDataStyling() {
+    data.forEach(element => {
+        element.classList.remove("data-styling");
+    });
+}
+

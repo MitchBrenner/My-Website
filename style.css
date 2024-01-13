@@ -57,7 +57,9 @@
 
 .name h1{
     user-select: none;
-    font-weight: 400;
+    font-size: 2.4em;
+    font-weight: 600;
+    letter-spacing: 5px;
 }
 
 
@@ -192,6 +194,7 @@
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
     color: rgb(51, 0, 128);
+    user-select: none;
 }
 
 
@@ -249,7 +252,7 @@
     opacity: 1;
     padding: 20px;
     margin: 5px;
-    transition: transform-scale .2s ease-in-out;
+    transition: background .2s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
     background: rgba(64, 0, 128, 0.204);
@@ -279,19 +282,23 @@
 }
 
 .grid-item:hover{
-    transform: scale(1.1,1.1);
-    /* cursor: pointer; */
+    transform: scale(1.01,1.01);
+    /* not pointer */
+    opacity: 1;
+    background: rgba(64, 0, 128, 0.354);
 }
 
 
 .grid-item h1{
     color: rgb(51, 0, 128);
     font-size: 1.6rem;
+    user-select: none;
 }
 
 .grid-item h2{
     font-size: 1em;
     font-weight: 100;
+    user-select: none;
 }
 
 .grid-item a, .grid-item i{
@@ -299,6 +306,10 @@
     color: white;
     transition: opacity, color .5s ease;
     opacity: .85;
+}
+
+.grid-item p{
+    user-select: none;
 }
 
 .bottom-grid h2{
